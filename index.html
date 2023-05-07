@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <?xml version="1.0" encoding="utf-8"?>
+    </head>
+
+    <body>
+
+        <!-- <div class="section">
+            <div class="image-container">
+                <div class="image" style="background-image: url('skyh1.jpeg')"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="image-container">
+                <div class="image" style="background-image: url('skyh1.jpeg')"></div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="image-container">
+                <div class="image" style="background-image: url('skyh1.jpeg')"></div>
+            </div>
+        </div> -->
+
+        <video autoplay muted loop id="myVideo">
+            <source src="thesisviddraft_02.mp4" type="video/mp4">
+          </video>
+
+        <div id="container">
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">01</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-1">Introduction</h1>
+                    </div>
+                </div>
+                <p id="p-1">
+                    This is an immersive audio-visual installation that explores how we perceive and emotionally react to the space within our constructed environment when it is manipulated with light, sound, and movement in order to consider the sensorial experience of dealing with a mental health crisis. It consists of a circular kinetic fabric sculpture that viewers stand inside, with a mechanism that broadens and constrains the space that the fabric creates within the circle, simulating a buildup and release of bodily sensations (breathing, tension). Illuminated by a series of varying blue lights, a transcendent ambient track accompanies the entire piece.
+                </p>
+                <div id="row">
+                    <div class="column">
+                      <img src="nema17spec_01.png" style="width:100%">
+                    </div>
+                    <div class="column">
+                      <img src="nema17spec_02.png" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">02</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-2">Impetus</h1>
+                    </div>
+                </div>
+
+                <p id="p-2">
+                    impetus
+                    
+                </p>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">03</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-3">Audience</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">04</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-4">Context</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">05</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-5">Methodology</h1>
+                    </div>
+                </div>
+                <p id="p-5">
+                    Method
+                </p>
+                    <div id="arena">
+                        <div class="hero">
+                        <ul class="hero__container" data-active-idx="0" data-active-color-idx="0"></ul>
+                      </div>
+                      <template id="image-block">
+                        <li>
+                            <a href="https://www.are.na/anya-osipov-flhnqfeoohi/thesis_documentation" target="_blank">
+                            <img src="" alt="" />
+                          </a>
+                        </li>
+                      </template>
+                    </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">06</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-6">Self-Evaluation</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">07</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-7">Glossary</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div id="title">
+                    <div class="titleColumn">
+                        <p class="small">08</p>
+                    </div>
+                    <div class="titleColumn">
+                        <h1 id="h1-8">Bibliography</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          
+        
+        <script>
+
+            document.getElementById("h1-1").addEventListener("click", clickedIntro);
+            document.getElementById("h1-2").addEventListener("click", clickedImpetus);
+            // document.getElementById("h1-3").addEventListener("click", clicked);
+            // document.getElementById("h1-4").addEventListener("click", clicked);
+            document.getElementById("h1-5").addEventListener("click", clickedMethod);
+            // document.getElementById("h1-6").addEventListener("click", clicked);
+            // document.getElementById("h1-7").addEventListener("click", clicked);
+            // document.getElementById("h1-8").addEventListener("click", clicked);
+
+            function clickedIntro(){
+
+                if (document.getElementById("p-1").style.display == "none") {
+                    // document.getElementById("h1-1").style.border = "solid";
+                    // document.getElementById("h1-1").style.borderWidth = "1px";
+                    // document.getElementById("h1-1").style.borderTop = "block";
+                    // document.getElementById("box-1").style.height = "500px";
+                    document.getElementById("p-1").style.display = "block";
+                    document.getElementById("row").style.display = "flex";
+                } else {
+                    // document.getElementById("h1-1").style.paddingBottom = "0px";
+                    // document.getElementById("h1-1").style.border = "none";
+                    document.getElementById("p-1").style.display = "none";
+                    document.getElementById("row").style.display = "none";
+                }
+            }
+
+            function clickedImpetus(){
+
+                if (document.getElementById("p-2").style.display == "none") {
+                    // document.getElementById("h1-1").style.border = "solid";
+                    // document.getElementById("h1-1").style.borderWidth = "1px";
+                    // document.getElementById("h1-1").style.borderTop = "block";
+                    // document.getElementById("box-1").style.height = "500px";
+                    document.getElementById("p-2").style.display = "block";
+                    // document.getElementById("row").style.display = "flex";
+                } else {
+                    // document.getElementById("h1-1").style.paddingBottom = "0px";
+                    // document.getElementById("h1-1").style.border = "none";
+                    document.getElementById("p-2").style.display = "none";
+                    // document.getElementById("row").style.display = "none";
+                }
+            }
+
+            function clickedMethod(){
+
+                if (document.getElementById("p-5").style.display == "none") {
+                    document.getElementById("p-5").style.display = "block";
+                    document.getElementById("arena").style.display = "block";
+                } else {
+                    document.getElementById("p-5").style.display = "none";
+                    document.getElementById("arena").style.display = "none";
+                }
+            }
+
+
+            //are.na images
+
+            const colors = ['#008dcf', '#b59fb5', '#e3a1ad'];
+            window.addEventListener('DOMContentLoaded', () => {
+            // const channel = 'image-sequence';
+
+            fetch(`https://api.are.na/v2/channels/thesis_documentation?per=100`, {cache: 'no-store'})
+                .then(response => response.json())
+                .then(data => {
+                renderBlocks(data.contents);
+                runImages();
+                runColors();
+                });
+            
+            const renderBlocks = (blocks) => {
+                blocks.forEach((block, index) => {
+                if (block.image && block.image.large.url) {
+                    let tmpl = document.getElementById('image-block');
+                    let clone = tmpl.content.cloneNode(true);
+                    if (index == 0) {
+                    clone.querySelector('li').classList.add('active');
+                    }
+                    clone.querySelector('img').src = block.image.large.url;
+                    clone.querySelector('img').alt = block['generated_title'];
+
+                    document.querySelector('ul').appendChild(clone);
+                }
+                });
+            };
+
+            const runImages = () => {
+                const heroImgContainer = document.querySelector('ul');
+                return setInterval(() => {
+                let heroImgs = heroImgContainer.querySelectorAll('li');
+                let activeIdx = parseInt(heroImgContainer.dataset.activeIdx);
+                heroImgs[activeIdx].classList.remove('active');
+                activeIdx = (activeIdx + 1) % heroImgs.length;
+                heroImgs[activeIdx].classList.add('active');
+                heroImgContainer.dataset.activeIdx = activeIdx;
+                }, 1000);
+            };
+
+            const runColors = () => {
+                runColor();
+                return setInterval(runColor, 1000 * 7);
+            }
+
+            const runColor = () => {
+                const heroImgContainer = document.querySelector('ul');
+                let activeColorIdx = parseInt(heroImgContainer.dataset.activeColorIdx);
+                heroImgContainer.style.setProperty('--background', colors[activeColorIdx]);
+                activeColorIdx = (activeColorIdx + 1) % colors.length;
+                heroImgContainer.dataset.activeColorIdx = activeColorIdx;
+            };
+            });
+
+
+            
+
+        </script>
+    </body>
+</html>
