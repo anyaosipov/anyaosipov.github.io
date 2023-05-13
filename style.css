@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background-image: url("skyh1.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    transition: 2s all ease;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@font-face {
+    font-family: gerstner;
+    src: url(Gerstner\ Programm\ Regular.otf);
+}
+
+#myVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#tt {
+    position: fixed;
+    color: white;
+    font-size: 100px;
+    width: 100%;
+    border-top: solid;
+    margin-top: 20px;
+    padding-top: -20px;
+    letter-spacing: -5px;
+    line-height: 80px;
+}
+
+#subtt {
+    position: fixed;
+    color: white;
+    font-size: 10px;
+    /* width: 100%; */
+    bottom: 0;
+    border: solid;
+    padding: 7px;
+}
+
+.section {
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    display: flex;
+  }
+  
+  .image {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
+    filter: blur(30px);
+    opacity: 0;
+    transition: filter 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .section.active .image {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+
+#container {
+    /* margin: auto; */
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    /* text-align: center; */
+    width: 700px;
+    padding: 0;
+    /* background-color: white; */
+    background-image: inherit;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.box {
+    border-bottom: solid;
+    border-left: solid;
+    mix-blend-mode: exclusion;
+    color: white;
+    padding-left: 40px;
+    padding-bottom: 1px;
+}
+
+.box:hover {
+    mix-blend-mode: normal;
+}
+
+h1 {
+    /* border-top: solid; */
+    transition: 1s all ease;
+    margin-bottom: 10px;
+    display: block;
+    width: auto;
+    font-family: 'Times New Roman', serif;
+    font-size: 35pt;
+    font-weight: normal;
+    margin-left: -300px;
+    cursor: crosshair;
+    /* margin-right: 50px; */
+}
+
+#h1-1:hover {
+    transition: 1s all ease;
+    /* filter: blur(2px); */
+}
+
+p {
+    /* margin: 10px; */
+    transition: 1s all ease;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    font-family: gerstner;
+    font-size: 12pt;
+    padding-right: 30px;
+    line-height: 18px;
+}
+
+#p-1 {
+    display: none;
+    transition: 1s all ease;
+}
+
+#p-2 {
+    display: none;
+    transition: 1s all ease;
+}
+#p-3 {
+    display: none;
+    transition: 1s all ease;
+}
+#p-4 {
+    display: none;
+    transition: 1s all ease;
+}
+#p-5 {
+    display: none;
+    transition: 1s all ease;
+}
+#p-6 {
+    display: none;
+    transition: 1s all ease;
+}
+#p-7 {
+    display: none;
+    transition: 1s all ease;
+}
+#p-8 {
+    display: none;
+    transition: 1s all ease;
+}
+
+/* img {
+    width: 40vw;
+} */
+
+#row {
+    display: none;
+    margin-left: 30px;
+}
+
+#title {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+}
+
+.titleColumn {
+    flex: 50%;
+}
+
+.small {
+    margin-left: -30px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.hero {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  #arena {
+    display: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  .hero__container {
+    position: relative;
+    margin: 0;
+  }
+
+  .hero__container li {
+    pointer-events: all;
+    display: none;
+  }
+
+  .hero__container li.active {
+    display: block;
+  }
+
+  .hero__container li a {
+    display: block;
+  }
+
+  img {
+    display: block;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+    filter: brightness(150%) grayscale(100%) contrast(100%) ;
+  }
+  
+  .hero__container:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: lighten;
+    background-color: var(--background, #dd6203);
+    transition: background 4s linear;
+  }
