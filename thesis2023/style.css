@@ -8,7 +8,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; */
     transition: 2s all ease;
-    background-color: black;
+    background-color: #000000;
 }
 
 a {
