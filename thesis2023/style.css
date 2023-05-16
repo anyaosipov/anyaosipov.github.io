@@ -21,6 +21,11 @@ a {
     src: url(Gerstner\ Programm\ Regular.otf);
 }
 
+@font-face {
+    font-family: times;
+    src: url(TimesNow-SemiLight.ttf);
+}
+
 #myVideo {
     width: 100vw;
     height: 100vh;
@@ -43,6 +48,7 @@ a {
     padding-top: -20px;
     letter-spacing: -5px;
     line-height: 80px;
+    display: block;
 }
 
 #subtt {
@@ -53,6 +59,11 @@ a {
     bottom: 0;
     border: solid;
     padding: 7px;
+    display: block;
+}
+
+.caption {
+    font-size: 10px;
 }
 
 .section {
@@ -91,6 +102,7 @@ a {
     position: absolute;
     right: 0;
     margin-top: 20px;
+    margin-bottom: 40px;
     /* text-align: center; */
     width: 700px;
     padding: 0;
@@ -116,13 +128,14 @@ a {
 h1 {
     /* border-top: solid; */
     transition: 1s all ease;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    margin-left: -300px;
     display: block;
     width: auto;
-    font-family: 'Times New Roman', serif;
+    font-family: times;
     font-size: 35pt;
     font-weight: normal;
-    margin-left: -300px;
     cursor: crosshair;
     /* margin-right: 50px; */
 }
@@ -142,39 +155,32 @@ p {
     font-size: 12pt;
     padding-right: 30px;
     line-height: 18px;
+    display:none;
 }
 
 #p-1 {
-    display: none;
     transition: 1s all ease;
 }
 
 #p-2 {
-    display: none;
     transition: 1s all ease;
 }
 #p-3 {
-    display: none;
     transition: 1s all ease;
 }
 #p-4 {
-    display: none;
     transition: 1s all ease;
 }
 #p-5 {
-    display: none;
     transition: 1s all ease;
 }
 #p-6 {
-    display: none;
     transition: 1s all ease;
 }
 #p-7 {
-    display: none;
     transition: 1s all ease;
 }
 #p-8 {
-    display: none;
     transition: 1s all ease;
 }
 
@@ -189,6 +195,7 @@ p {
 
 #title {
     display: flex;
+    width: 650px;
 }
   
 .column {
@@ -203,6 +210,7 @@ p {
     margin-left: -30px;
     margin-top: 5px;
     font-size: 10px;
+    display: block;
 }
 
 ul {
@@ -253,7 +261,17 @@ ul {
     max-height: 600px;
     width: auto;
     height: auto;
-    filter: brightness(150%) grayscale(100%) contrast(100%) ;
+    /* filter: brightness(100%) grayscale(100%) contrast(1000%) ; */
+    filter: brightness(100%) grayscale(100%) contrast(100%);
+  }
+
+  .pre {
+    width: 600px;
+    margin-top: 20px;
+  }
+
+  img:hover {
+    filter: brightness(100%) grayscale(0%) contrast(100%);
   }
   
   .hero__container:after {
@@ -265,7 +283,7 @@ ul {
     left: 0;
     right: 0;
     mix-blend-mode: lighten;
-    background-color: var(--background, #dd6203);
+    /* background-color: var(--background, #dd6203); */
     transition: background 4s linear;
   }
 
@@ -292,3 +310,65 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
  }
+
+ /* media screens */
+
+ @media screen and (max-width: 1350px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #tt {
+        /* width: 500px; */
+        width: 100%;
+        font-size: 80px;
+        position: absolute;
+        left: -30px;
+        /* text-align: center; */
+        padding-bottom: 20px;
+        padding-left: 70px;
+        border-bottom: solid;
+    }
+
+    #title {
+        width: 460px;
+    }
+
+    #container {
+        /* width: 500px; */
+        width: 100%;
+        margin-top: 125px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        right: 0;
+    }
+
+    img {
+        width: 400px;
+    }
+
+    .pre {
+        width: 100%;
+    }
+
+
+    h1 {
+        margin-left: -200px;
+    }
+
+    .box {
+        border-left: none;
+        right: 0;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #tt {
+        font-size: 50pt;
+    }
+
+    h1 {
+        font-size: 30pt;
+    }
+}
