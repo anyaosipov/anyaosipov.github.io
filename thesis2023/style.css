@@ -372,3 +372,55 @@ ul {
         font-size: 30pt;
     }
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    #tt {
+        font-size: 110pt;
+        padding-top: 30px;
+        padding-bottom: 70px;
+    }
+
+    #subtt {
+        font-size: 30pt;
+    }
+
+    #container {
+        /* width: 500px; */
+        /* width: 100%; */
+        margin-top: 205px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        right: 0;
+        padding-left: 50px;
+    }
+
+    #title {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 80pt;
+        margin-left: 0px;
+    }
+
+    p {
+        font-size: 25pt;
+        line-height: 38px;
+    }
+
+    .box {
+        padding-right: 50px;
+        width: 100%;
+    }
+
+    .small {
+        font-size: 20pt;
+    }
+
+    img {
+        width: auto;
+    }
+}
