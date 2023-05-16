@@ -60,6 +60,7 @@ a {
     border: solid;
     padding: 7px;
     display: block;
+    left: 0;
 }
 
 .caption {
